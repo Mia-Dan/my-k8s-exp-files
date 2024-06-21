@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: cpu-intensive-pyhttp-pod
+  labels:
+    jobtype: online
+    intensive: cpu
+spec:
+#  schedulerName: my-scheduler
+  containers:
+  - name: cpu-intensive-pyhttp-pod
+    image: miadan/exp-run-cpu:0.0.0
