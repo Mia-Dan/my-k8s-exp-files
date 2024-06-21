@@ -1,5 +1,5 @@
 FROM python:3.10.11
 
-ADD runCPU.py
+COPY ./runCPU.py /runCPU.py
 
-CMD ["python", "runCPU.py"]
+CMD ["python", "/runCPU.py"]
