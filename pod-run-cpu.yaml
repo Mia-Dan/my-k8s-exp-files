@@ -5,6 +5,7 @@ metadata:
   labels:
     jobtype: online
     intensive: cpu
+    app: cpu-intensive-pyhttp-pod
 spec:
 #  schedulerName: my-scheduler
   containers:
