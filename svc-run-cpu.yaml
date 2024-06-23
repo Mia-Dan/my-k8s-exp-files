@@ -1,0 +1,15 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: svc-run-cpu
+  labels:
+    jobtype: online
+    intensive: cpu
+spec:
+    selector:
+        app: cpu-intensive-pyhttp-pod
+    ports:
+        - port: 8084
+          targetPort: 8084
+          nodePort: 8084
+    type: NodePort
