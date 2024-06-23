@@ -11,7 +11,8 @@ git clone https://github.com/Mia-Dan/my-k8s-exp-files.git\
 cd ~/my-k8s-exp-files/ && ls
 k apply -f pod-run-cpu.yaml
 k apply -f svc-run-cpu.yaml
-watch kubectl get po
+# watch kubectl get po
+sleep 30
 curl http://172.30.1.2:30084/cpu/1
 
 # install jdk
